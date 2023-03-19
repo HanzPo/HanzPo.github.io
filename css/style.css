@@ -1,0 +1,141 @@
+/* Whole Page*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom right, #232729, #3c475c);
+    overflow: overlay;
+}
+
+h1, h2, h3, p {
+    color: white;
+    font-family: Roboto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+/* Navigation Bar */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(24, 24, 24);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: grey;
+  }
+
+/* About section */
+
+.bio {
+    padding-right: 5%;
+}
+
+.bio span{
+    color: #ff1515;
+    font-weight: 1200;
+}
+
+.bio h1{
+    font-size: 100px;
+    overflow: visible;
+}
+
+.profile-picture {
+    padding-left: 5%;
+}
+
+#about {
+    display: flex;
+    padding-top: 5%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 5%;
+}
+
+.profile-picture img{
+    border-radius: 50%;
+}
+
+#projects {
+    background-color: #232729;
+}
+
+section {
+    padding: 20px;
+}
+
+/* BACKUP IN CASE SOMETHING BREAKS*/
+/*
+.bio {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: -2;
+}
+
+.profile-picture {
+    position: absolute;
+    right: 15%;
+    top: 20%;
+    bottom: 0;
+    z-index: -2;
+}
+
+*/
+
+/* FOOTER */
+
+footer p{
+    padding: 10px;
+    background-color: black;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: small;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #686868;
+    border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8d8d8d;
+  }
