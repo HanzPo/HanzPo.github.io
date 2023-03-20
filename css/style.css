@@ -9,14 +9,14 @@ body {
     overflow: overlay;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, li {
     color: white;
     font-family: Roboto;
 }
 
 h2 {
     text-align: center;
-    font-size: 48px;
+    font-size: 64px;
 }
 
 /* Navigation Bar */
@@ -120,6 +120,7 @@ a.button {
     border: white 2px;
     border-style: solid;
     border-radius: 20px;
+
 }
 
 a.button:hover:not(:active){
@@ -168,30 +169,32 @@ a.button:hover:not(:active){
     padding-right: 4vw;
 }
 
+/* EXPERIENCE */
 
+#experience {
+    text-align: center;
+}
+
+.organization {
+    font-weight: 700;
+    font-size: larger;
+}
+
+#experience div h3{
+    font-size: 32px;
+}
+
+#experience div ul{
+    inline-size: 35vw;
+    text-align: left;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
 
 section {
     padding: 20px;
 }
-
-/* BACKUP IN CASE SOMETHING BREAKS*/
-/*
-.bio {
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    z-index: -2;
-}
-
-.profile-picture {
-    position: absolute;
-    right: 15%;
-    top: 20%;
-    bottom: 0;
-    z-index: -2;
-}
-
-*/
 
 /* FOOTER */
 
