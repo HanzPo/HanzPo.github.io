@@ -84,9 +84,31 @@ nav ul li a:hover:not(.active) {
     border-radius: 50%;
 }
 
+/* PROJECTS */
+
 #projects {
     background-color: #232729;
 }
+
+#projects-list div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#projects-list div h3 {
+    text-align: left;
+    inline-size: 600px;
+    padding: 20px;
+}
+
+#projects-list div p {
+    text-align: right;
+    inline-size: 600px;
+    padding: 20px;
+}
+
+
 
 section {
     padding: 20px;
