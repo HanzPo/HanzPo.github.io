@@ -103,6 +103,10 @@ nav ul li a:hover:not(.active) {
     align-self: center;
 }
 
+.socials li a img:hover:not(:active) {
+    opacity: 0.5;
+}
+
 a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -116,6 +120,10 @@ a.button {
     border: white 2px;
     border-style: solid;
     border-radius: 20px;
+}
+
+a.button:hover:not(:active){
+    opacity: 0.5;
 }
 
 .profile-picture img{
@@ -140,7 +148,7 @@ a.button {
 
 .title-pic-column {
     text-align: left;
-    inline-size: 600px;
+    inline-size: 500px;
     padding: 20px;
     padding-left: 120px;
     flex-flow: column;
@@ -157,7 +165,7 @@ a.button {
     text-align: justify;
     inline-size: 600px;
     padding: 20px;
-    padding-right: 120px;
+    padding-right: 4vw;
 }
 
 
