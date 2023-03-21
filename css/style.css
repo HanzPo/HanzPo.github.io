@@ -223,8 +223,25 @@ a.button:hover:not(:active){
     border-radius: 20px;
 }
 
+/* CONTACT */
+
+#contact {
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+}
+
+#contact p {
+    inline-size: 60vw;
+}
+
 section {
     padding: 20px;
+}
+
+#socials-end {
+    display: table;
+    margin: 0 auto;
 }
 
 /* FOOTER */
