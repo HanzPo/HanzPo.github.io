@@ -192,6 +192,16 @@ a.button:hover:not(:active){
     margin-bottom: 30px;
 }
 
+#experience div img {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#extracurriculars {
+    background-color: #232729;
+}
+
 section {
     padding: 20px;
 }
