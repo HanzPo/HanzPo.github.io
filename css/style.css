@@ -198,8 +198,29 @@ a.button:hover:not(:active){
     border-radius: 20px;
 }
 
+/* EXTRACURRICULARS */
+
 #extracurriculars {
     background-color: #232729;
+    text-align: center;
+}
+
+#extracurriculars div h3{
+    font-size: 32px;
+}
+
+#extracurriculars div ul{
+    inline-size: 35vw;
+    text-align: left;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#extracurriculars div img {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 section {
