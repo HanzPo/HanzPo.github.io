@@ -134,6 +134,12 @@ a.button:hover:not(:active){
     height: auto;
 }
 
+.fa {
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+}
+
 /* PROJECTS */
 
 #projects {
