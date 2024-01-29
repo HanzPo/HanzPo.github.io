@@ -1,0 +1,18 @@
+.rounded-container {
+  max-width: 550px;
+  border: 3px solid black;
+  border-radius: 20px;
+  text-align: center;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.rounded-container:hover {
+  box-shadow: 0 0 30px rgba(255, 187, 0, 0.568);
+  cursor:pointer;
+}
+
+.rounded-container img {
+  padding-top: 20px;
+  width: 80%;
+}

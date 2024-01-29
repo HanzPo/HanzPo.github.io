@@ -1,35 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import { Typewriter } from "react-simple-typewriter";
+import Project from "./components/Project";
+import ImageFiller from "react-image-filler";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="root">
+      <div className="navbar">
+        <div className="logo">Hanz Po</div>
+        <div className="shortcuts">
+          <a href="#top">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="content">
+        <div id="about" className="intro">
+          <ImageFiller width={300} height={400} />
+          <div className="intro-text">
+            <p className="hi">Hey, my name is</p>
+            <h1 className="big-name">Hanz Po</h1>
+            <div className="typewriter">
+              I'm a
+              <Typewriter
+                words={[
+                  " developer.",
+                  " problem solver.",
+                  " lifelong learner.",
+                  " space enthusiast.",
+                  " cheese enjoyer.",
+                ]}
+                cursor
+                loop={false}
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1500}
+              />
+            </div>
+          </div>
+        </div>
+        <div id="projects" className="projects">
+          <h1>Projects</h1>
+          <div className="gallery">
+            <Project projectName="Intellimailr" />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+          </div>
+        </div>
+        <div id="experience" className="experience">
+          <h1>Experience</h1>
+          <div className="tech-stacks"></div>
+          <div className="roles"></div>
+        </div>
+        <div id="contact" className="contact">
+          <h1>Contact</h1>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
